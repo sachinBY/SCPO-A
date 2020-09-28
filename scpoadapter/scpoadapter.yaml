@@ -254,8 +254,8 @@ gs1:
     xsd:
       root: GS1_JDA/2019.1.1
   enable:
-    #validation: "true"
-    validation: "false"
+    validation: "true"
+    #validation: "false"
   message:
     size: "100"
     plannedSupply:
