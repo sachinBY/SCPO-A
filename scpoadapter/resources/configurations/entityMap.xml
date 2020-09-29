@@ -341,6 +341,16 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="item" bi-directional="true">
+	<table name="dmdunit">
+			<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBURE_STR1"/>
+			<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBURE_DTE1" dataType="date"/>
+			<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBURE_NUM1" dataType="integer"/>
+			<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBURE_FLT1" dataType="float"/>
+    	</table>
+		<table name="UDT_DMDUNIT" isUDT="true">
+    		<column hostColumnName="UDT_STRING1" scpoColumnName="UDC_ATTRIBURE_STR1"/>
+		<column hostColumnName="UDT_STRING2" scpoColumnName="UDC_ATTRIBURE_STR2"/>
+    	</table>
     	<!-- <table name="item">
     		<column hostColumnName="description" scpoColumnName="udc1"/>
     		<column hostColumnName="tradeDate" scpoColumnName="udc2" dataType="date"/>
@@ -925,6 +935,18 @@
     	</table> -->
     </entity-map>
     <entity-map scpoEntityName="sourcing" bi-directional="true">
+	<table name="sourcing">
+    		<column hostColumnName="UDC_STR1" scpoColumnName="UDC_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDC_NUM1" scpoColumnName="UDC_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDC_DTE1" scpoColumnName="UDC_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDC_FLT1" scpoColumnName="UDC_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>
+		<table name="UDT_SOURCING" isUDT="true">
+    			<column hostColumnName="UDT_STR1" scpoColumnName="UDT_ATTRIBUTE_STR1"/>
+    		<column hostColumnName="UDT_NUM1" scpoColumnName="UDT_ATTRIBUTE_NUM1" dataType="number"/>
+    		<column hostColumnName="UDT_DTE1" scpoColumnName="UDT_ATTRIBUTE_DTE1" dataType="date"/>
+    		<column hostColumnName="UDT_FLT1" scpoColumnName="UDT_ATTRIBUTE_FLT1" dataType="float"/>
+    	</table>   
     	 <!-- <table name="sourcing">
     		<column hostColumnName="documentStatusCode" scpoColumnName="udc1"/>
     		<column hostColumnName="arrivalCalendar" scpoColumnName="udc2"/>
